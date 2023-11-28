@@ -1,19 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Runtime.InteropServices;
-
-Console.WriteLine($"Hello, World! {Environment.CurrentDirectory}");
-
-
-var dllPath = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, ImportDLL.DllLocation));
-Console.WriteLine($"DLL location: {dllPath}");
-if (!File.Exists(dllPath)) {
-    Console.WriteLine($"DLL does not exist at: {dllPath} does not exist");
-}
+﻿using System.Runtime.InteropServices;
 
 Console.WriteLine("Before call to GenerateCode");
 int returncode = ImportDLL.GenerateCode();
 Console.WriteLine($"Return code from GenerateCode: {returncode}");
-
 
 public static class ImportDLL
 {
