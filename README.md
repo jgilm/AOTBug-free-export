@@ -1,4 +1,4 @@
-# AOTBug-free-export
+# AOT Exported Function Called `free` and HttpClient
 This illustrates an AOT bug when exporting a function named "free".
 
 Build and run this sample, at the root of the repo, type `.\run` and this will build the DLL and run 
