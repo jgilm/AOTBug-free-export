@@ -11,8 +11,6 @@ public static class ImportDLL
     [DllImport(DllLocation, EntryPoint = "generate_code")]
     public static extern int GenerateCode();
 
-    // NOTE: Change the entry point when the dll entry point name is changed
-    [DllImport(DllLocation, EntryPoint = "free")]
-    public static extern IntPtr ReleaseMem(IntPtr pointer);
+    // NOTE: The "free" entry point doesn't need to be included here.
 }
 

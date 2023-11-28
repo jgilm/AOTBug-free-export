@@ -26,7 +26,6 @@ public class Class1
     }
 
     // NOTE: Change this exported name to anything other than "free" (such as "release") and it will work
-    // Also change the entry point in the ImportDLL class in the console app
     [UnmanagedCallersOnly(EntryPoint = "free")]
     public static void ReleaseMem (IntPtr ptr) {
 
